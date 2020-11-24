@@ -1,0 +1,20 @@
+{
+    "name": "Endless Scroll Stop",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_icon": "scroll.png"
+    },
+    "permissions": ["activeTab"],
+    "icons": {
+      "16": "scroll.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  
